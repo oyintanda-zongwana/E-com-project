@@ -76,11 +76,12 @@ body {
 
 /* Home Page */
 #landing {
-    background-image: url('../1716818771873ihufebt4-\ \(1\).png');
-    height: 90vh;
-    width: 100%;
+    background-image: url('https://images.pexels.com/photos/20536749/pexels-photo-20536749/free-photo-of-blonde-women-posing-in-a-narrow-alley.jpeg?auto=compress&cs=tinysrgb&w=600');
     background-size: cover;
-    background-position: top 25% right 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200vh;
+    width: 100%;
     padding: 0 80px;
     display: flex;
     flex-direction: column;
@@ -88,16 +89,22 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+
 #landing h4 {
     padding-bottom: 15px;
+    color: whitesmoke;
+}
+#landing h2 {
+    padding-bottom: 15px;
+    color: whitesmoke;
 }
 #landing h1 {
     color: rgb(65, 153, 156);
 }
 .btn1 {
-    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
-    background-color: transparent;
-    color: darkgreen;
+    background-color: rgb(5, 106, 110);
+    color: rgb(4, 10, 95);
     border: 0;
     padding: 14px 80px 14px 65px;
     cursor: pointer;
@@ -208,18 +215,19 @@ body {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/2313928289/display_1500/stock-vector-save-offer-off-sale-banner-sign-board-promotion-vector-illustration-2313928289.jpg);
     width: 100%;
     height: 50vh;
     background-size: cover;
     background-position: center;
 }
 #banner h4 {
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     font-size: 19px;
+    font-weight: 600;
 }
 #banner h2 {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     padding: 10px 0;
 }
@@ -236,17 +244,24 @@ body {
     flex-wrap: wrap;
 }
 #sm-banner .banner-box {
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
+    background-image: url(https://images.thebridesofoklahoma.com/wp-content/uploads/blog/12830/classic-dresses-with-a-modern-point-of-view.jpg);
     min-width: 580px;
-    height: 60vh;
+    height: 92vh;
     background-size: cover;
     background-position: center;
     padding: 30px;
+}
+#sm-banner .banner-box2{
+    background-image: url(https://modersvp.com/wp-content/uploads/2021/01/IMG_1394-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #sm-banner h4 {
     color: white;
@@ -280,7 +295,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/guests-seen-outside-bally-during-the-milan-womens-fashion-news-photo-1625088318.jpg?crop=0.417xw:0.624xh;0.242xw,0&resize=640:*);
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -289,10 +304,10 @@ body {
     margin-bottom: 20px;
 }
 #banner3 .banner-box2 {
-    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
+    background-image: url(https://www.stylerave.com/wp-content/uploads/2020/11/Adobe_Post_20201112_2050190.1997167356691132.png);
 }
 #banner3 .banner-box3 {
-    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
+    background-image: url(https://images.prestigeonline.com/wp-content/uploads/sites/5/2021/08/24153826/Featured-image-69.png?tr=w-600);
 }
 #banner3 h2 {
     color: white;
@@ -309,7 +324,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
+    /* background-image: url(../1716818771873ihufebt4-\ \(1\).png); */
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: cornsilk;
@@ -317,12 +332,12 @@ body {
 #newsletter h4 {
     font-size: 22px;
     font-weight: 600;
-    color: whitesmoke;
+    color: rgb(62, 47, 47);
 }
 #newsletter p {
     font-size: 14px;
     font-weight: 600;
-    color: whitesmoke;
+    color: rgb(62, 47, 47);
 }
 #newsletter p span {
     color: rgb(251, 216, 16);
@@ -344,4 +359,8 @@ body {
 #newsletter button:hover {
     background-color: rgb(245, 245, 245);
     color: #01ff05cb;
+}
+footer {
+    background-color: black;
+    color: cornsilk;
 }
