@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #282525;
+}
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #282525;
+}
+h4 {
+    font-size: 20px;
+    color: #282525;
+}
+h6 {
+    font-size: 12px;
+    font-weight: 700;
+}
+p {
+    font-size: 16px;
+    color: #385a4b;
+    margin: 15px 0 20px 0;
+}
+.section-p1 {
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section-p1 i {
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+}
+.section-m1 {
+    margin: 40px 0;
+}
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border: 1px solid blue;
+    outline: auto;
+    transition: 0.3s;
+}
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: rgb(49, 46, 46);
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: auto;
+    transition: 0.3s;
+}
+body {
+    width: 100%;
+}
+.logo {
+    background: white;
+    border-radius: 35%;
+} 
+#navbarSupportedContent li a:hover {
+    color: #29829b;
+}
+
+/* Home Page */
+#landing {
+    background-image: url('../1716818771873ihufebt4-\ \(1\).png');
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#landing h4 {
+    padding-bottom: 15px;
+}
+#landing h1 {
+    color: rgb(65, 153, 156);
+}
+.btn1 {
+    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
+    background-color: transparent;
+    color: darkgreen;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+}
+#feature div {
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.03);
+    border: 1px solid rgb(230, 215, 215);
+    border-radius: 25%;
+    margin: 15px 0;
+}
+#feature div:hover {
+    box-shadow: 10px 10px 54px rgb(70, 0, 0, 0.1);
+    color: aliceblue;
+    background-color: black;
+}
+#feature h6 {
+    display: inline-block;
+    font-size: 17px;
+    padding: 9px 8px 6px 8px;
+    color: rgb(10, 93, 93);
+    background-color: aquamarine;
+}
+#feature h6:hover {
+    background-color: rgb(10, 93, 93);
+    color: aquamarine;
+    cursor: pointer;
+}
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+#product1 {
+    text-align: center;
+}
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(99, 95, 95);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.36);
+}
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des .star {
+    font-size: 20px;
+    color: gold;
+    display: flex;
+    font-size: 20px;
+}
+#product1 .pro .des .star i {
+    font-size: 25px;
+}
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart {
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: rgb(219, 213, 213);
+    font-weight: 500;
+    color: #0d0f0e;
+    border: 1px solid rgb(193, 181, 181);
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+#product1 .pro .cart i {
+    font-size: 45px;
+}
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4 {
+    color: whitesmoke;
+    font-size: 19px;
+}
+#banner h2 {
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span {
+    color: red;
+}
+#banner button:hover {
+    background-color: black;
+    color: white;
+}
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
+    min-width: 580px;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+#sm-banner span {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover {
+    background-color: green;
+    border: green;
+}
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px
+}
+#banner3  .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#banner3 .banner-box2 {
+    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
+}
+#banner3 .banner-box3 {
+    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
+}
+#banner3 h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner3 h3 {
+    color: orangered;
+    font-weight: 800;
+    font-size: 15px;
+}
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(../1716818771873ihufebt4-\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: cornsilk;
+}
+#newsletter h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+#newsletter p span {
+    color: rgb(251, 216, 16);
+}
+.newstext input {
+    height: 3rem;
+    padding: 0 1em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+#newsletter button {
+    background-color: #01ff05cb;
+    color: rgb(245, 245, 245);
+    white-space: nowrap;
+}
+#newsletter button:hover {
+    background-color: rgb(245, 245, 245);
+    color: #01ff05cb;
+}
