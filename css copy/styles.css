@@ -66,10 +66,17 @@ button.white {
 body {
     width: 100%;
 }
+
+/* HOME PAGE */
 .logo {
     background: white;
     border-radius: 35%;
 } 
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 #navbarSupportedContent li a:hover {
     color: #29829b;
 }
@@ -324,7 +331,6 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    /* background-image: url(../1716818771873ihufebt4-\ \(1\).png); */
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: cornsilk;
@@ -340,7 +346,7 @@ body {
     color: rgb(62, 47, 47);
 }
 #newsletter p span {
-    color: rgb(251, 216, 16);
+    color: #01ff05cb;
 }
 .newstext input {
     height: 3rem;
@@ -363,4 +369,169 @@ body {
 footer {
     background-color: black;
     color: cornsilk;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 1200px) {
+    #landing {
+        height: 150vh;
+        padding: 0 40px;
+    }
+    #landing h1 {
+        font-size: 40px;
+    }
+    #landing h2 {
+        font-size: 36px;
+    }
+    #landing h4 {
+        font-size: 18px;
+    }
+    .btn1 {
+        padding: 12px 60px;
+        font-size: 14px;
+    }
+    #product1 .pro {
+        width: 48%;
+    }
+    #banner, #sm-banner, #banner3, #newsletter {
+        padding: 0 40px;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 50vh;
+    }
+    #banner3 .banner-box {
+        min-width: 48%;
+    }
+}
+
+@media (max-width: 800px) {
+    #landing {
+        height: 120vh;
+        padding: 0 20px;
+    }
+    #landing h1 {
+        font-size: 30px;
+    }
+    #landing h2 {
+        font-size: 26px;
+    }
+    #landing h4 {
+        font-size: 14px;
+    }
+    .btn1 {
+        padding: 10px 50px;
+        font-size: 12px;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 50vh;
+    }
+    #banner3 .banner-box {
+        min-width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    #landing {
+        height: 100vh;
+        padding: 0 10px;
+    }
+    #landing h1 {
+        font-size: 24px;
+    }
+    #landing h2 {
+        font-size: 20px;
+    }
+    #landing h4 {
+        font-size: 12px;
+    }
+    .btn1 {
+        padding: 8px 40px;
+        font-size: 10px;
+    }
+    #feature div {
+        width: 100%;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    #banner3 .banner-box {
+        min-width: 100%;
+        height: 20vh;
+    }
+    #newsletter {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 300px) {
+    #landing {
+        height: 80vh;
+        padding: 0 5px;
+    }
+    #landing h1 {
+        font-size: 18px;
+    }
+    #landing h2 {
+        font-size: 16px;
+    }
+    #landing h4 {
+        font-size: 10px;
+    }
+    .btn1 {
+        padding: 6px 30px;
+        font-size: 8px;
+    }
+    #feature div {
+        width: 100%;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 20vh;
+    }
+    #banner3 .banner-box {
+        min-width: 100%;
+        height: 15vh;
+    }
+    #newsletter {
+        flex-direction: column;
+        text-align: center;
+    }
+    #newsletter h4, #newsletter p {
+        font-size: 12px;
+    }
+    .section-p1, .section-m1 {
+        padding: 20px 10px;
+    }
+    button.normal {
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+    button.white {
+        font-size: 9px;
+        padding: 8px 15px;
+    }
+    #banner {
+        height: 30vh;
+    }
+    #banner h2 {
+        font-size: 20px;
+    }
+    #banner h4 {
+        font-size: 14px;
+    }
+    #product1 .pro .des h5, #product1 .pro .des h4 {
+        font-size: 12px;
+    }
+    #product1 .pro .des .star i {
+        font-size: 18px;
+    }
 }
