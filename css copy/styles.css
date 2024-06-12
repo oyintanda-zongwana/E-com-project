@@ -96,8 +96,11 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-
-
+.ux {
+    background-color: #0d0f0e99;
+    padding: 20px 30px;
+    border-radius: 5%;
+}
 #landing h4 {
     padding-bottom: 15px;
     color: whitesmoke;
@@ -108,6 +111,9 @@ body {
 }
 #landing h1 {
     color: rgb(65, 153, 156);
+}
+#landing p {
+    color: rgb(234, 255, 2);
 }
 .btn1 {
     background-color: rgb(5, 106, 110);
@@ -159,7 +165,7 @@ body {
     border: 1px solid rgb(99, 95, 95);
     border-radius: 25px;
     cursor: pointer;
-    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.02);
+    box-shadow: 15px 15px 20px rgb(0, 0, 0, 0.01);
     margin: 15px 0;
     transition: 0.2s ease;
     position: relative;
@@ -371,6 +377,30 @@ footer {
     color: cornsilk;
 }
 
+
+/* SHOPING PAGE */
+#landing-header {
+    background-image: url(https://img.freepik.com/premium-psd/adha-shopping-basket-mockup_187299-38940.jpg?w=900);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 133vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.UX {
+    background-color: rgba(245, 245, 245, 0.252);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.UX p {
+    color: red;
+}
 
 /* MEDIA QUERY */
 @media (max-width: 1200px) {
