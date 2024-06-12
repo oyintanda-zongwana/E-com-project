@@ -331,7 +331,6 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    /* background-image: url(../1716818771873ihufebt4-\ \(1\).png); */
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: cornsilk;
@@ -347,7 +346,7 @@ body {
     color: rgb(62, 47, 47);
 }
 #newsletter p span {
-    color: rgb(251, 216, 16);
+    color: #01ff05cb;
 }
 .newstext input {
     height: 3rem;
