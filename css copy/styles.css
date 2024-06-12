@@ -378,7 +378,9 @@ footer {
 }
 
 
+
 /* SHOPING PAGE */
+
 #landing-header {
     background-image: url(https://img.freepik.com/premium-psd/adha-shopping-basket-mockup_187299-38940.jpg?w=900);
     background-size: cover;
@@ -401,6 +403,23 @@ footer {
 .UX p {
     color: red;
 }
+#pagination {
+    display: flex;
+    justify-content: center;
+}
+#pagination a {
+    text-decoration: none;
+    background-color: royalblue;
+    color: whitesmoke;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+#pagination a i {
+    font-size: 17px;
+    font-weight: 600;
+}
+
 
 /* MEDIA QUERY */
 @media (max-width: 1200px) {
@@ -563,5 +582,8 @@ footer {
     }
     #product1 .pro .des .star i {
         font-size: 18px;
+    }
+    footer {
+        font-size: 0.01em;
     }
 }
