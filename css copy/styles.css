@@ -96,8 +96,11 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-
-
+.ux {
+    background-color: #0d0f0e99;
+    padding: 20px 30px;
+    border-radius: 5%;
+}
 #landing h4 {
     padding-bottom: 15px;
     color: whitesmoke;
@@ -108,6 +111,9 @@ body {
 }
 #landing h1 {
     color: rgb(65, 153, 156);
+}
+#landing p {
+    color: rgb(234, 255, 2);
 }
 .btn1 {
     background-color: rgb(5, 106, 110);
