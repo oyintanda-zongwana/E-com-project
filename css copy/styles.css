@@ -378,8 +378,9 @@ footer {
 }
 
 
+
 /* SHOPING PAGE */
-/* SHOPING PAGE */
+
 #landing-header {
     background-image: url(https://img.freepik.com/premium-psd/adha-shopping-basket-mockup_187299-38940.jpg?w=900);
     background-size: cover;
@@ -418,6 +419,7 @@ footer {
     font-size: 17px;
     font-weight: 600;
 }
+
 
 /* MEDIA QUERY */
 @media (max-width: 1200px) {
