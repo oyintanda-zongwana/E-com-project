@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #282525;
+}
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #282525;
+}
+h4 {
+    font-size: 20px;
+    color: #282525;
+}
+h6 {
+    font-size: 12px;
+    font-weight: 700;
+}
+p {
+    font-size: 16px;
+    color: #385a4b;
+    margin: 15px 0 20px 0;
+}
+.section-p1 {
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section-p1 i {
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+}
+.section-m1 {
+    margin: 40px 0;
+}
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border: 1px solid blue;
+    outline: auto;
+    transition: 0.3s;
+}
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: rgb(49, 46, 46);
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: auto;
+    transition: 0.3s;
+}
+body {
+    width: 100%;
+}
+
+/* HOME PAGE */
+.logo {
+    background: white;
+    border-radius: 35%;
+} 
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#navbarSupportedContent li a:hover {
+    color: #29829b;
+}
+
+/* Home Page */
+#landing {
+    background-image: url('https://images.pexels.com/photos/20536749/pexels-photo-20536749/free-photo-of-blonde-women-posing-in-a-narrow-alley.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ux {
+    background-color: #0d0f0e99;
+    padding: 20px 30px;
+    border-radius: 5%;
+}
+#landing h4 {
+    padding-bottom: 15px;
+    color: whitesmoke;
+}
+#landing h2 {
+    padding-bottom: 15px;
+    color: whitesmoke;
+}
+#landing h1 {
+    color: rgb(65, 153, 156);
+}
+#landing p {
+    color: rgb(234, 255, 2);
+}
+.btn1 {
+    background-color: rgb(5, 106, 110);
+    color: rgb(4, 10, 95);
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+}
+#feature div {
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.03);
+    border: 1px solid rgb(230, 215, 215);
+    border-radius: 25%;
+    margin: 15px 0;
+}
+#feature div:hover {
+    box-shadow: 10px 10px 54px rgb(70, 0, 0, 0.1);
+    color: aliceblue;
+    background-color: black;
+}
+#feature h6 {
+    display: inline-block;
+    font-size: 17px;
+    padding: 9px 8px 6px 8px;
+    color: rgb(10, 93, 93);
+    background-color: aquamarine;
+}
+#feature h6:hover {
+    background-color: rgb(10, 93, 93);
+    color: aquamarine;
+    cursor: pointer;
+}
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+#product1 {
+    text-align: center;
+}
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(99, 95, 95);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 15px 15px 20px rgb(0, 0, 0, 0.01);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.36);
+}
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des .star {
+    font-size: 20px;
+    color: gold;
+    display: flex;
+    font-size: 20px;
+}
+#product1 .pro .des .star i {
+    font-size: 25px;
+}
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart {
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: rgb(219, 213, 213);
+    font-weight: 500;
+    color: #0d0f0e;
+    border: 1px solid rgb(193, 181, 181);
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+#product1 .pro .cart i {
+    font-size: 45px;
+}
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/2313928289/display_1500/stock-vector-save-offer-off-sale-banner-sign-board-promotion-vector-illustration-2313928289.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4 {
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    font-weight: 600;
+}
+#banner h2 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span {
+    color: red;
+}
+#banner button:hover {
+    background-color: black;
+    color: white;
+}
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-image: url(https://images.thebridesofoklahoma.com/wp-content/uploads/blog/12830/classic-dresses-with-a-modern-point-of-view.jpg);
+    min-width: 580px;
+    height: 92vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    background-image: url(https://modersvp.com/wp-content/uploads/2021/01/IMG_1394-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#sm-banner h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+#sm-banner span {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover {
+    background-color: green;
+    border: green;
+}
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px
+}
+#banner3  .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/guests-seen-outside-bally-during-the-milan-womens-fashion-news-photo-1625088318.jpg?crop=0.417xw:0.624xh;0.242xw,0&resize=640:*);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#banner3 .banner-box2 {
+    background-image: url(https://www.stylerave.com/wp-content/uploads/2020/11/Adobe_Post_20201112_2050190.1997167356691132.png);
+}
+#banner3 .banner-box3 {
+    background-image: url(https://images.prestigeonline.com/wp-content/uploads/sites/5/2021/08/24153826/Featured-image-69.png?tr=w-600);
+}
+#banner3 h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner3 h3 {
+    color: orangered;
+    font-weight: 800;
+    font-size: 15px;
+}
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: cornsilk;
+}
+#newsletter h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(62, 47, 47);
+}
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(62, 47, 47);
+}
+#newsletter p span {
+    color: #01ff05cb;
+}
+.newstext input {
+    height: 3rem;
+    padding: 0 1em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+#newsletter button {
+    background-color: #01ff05cb;
+    color: rgb(245, 245, 245);
+    white-space: nowrap;
+}
+#newsletter button:hover {
+    background-color: rgb(245, 245, 245);
+    color: #01ff05cb;
+}
+footer {
+    background-color: black;
+    color: cornsilk;
+}
+
+
+/* SHOPING PAGE */
+/* SHOPING PAGE */
+#landing-header {
+    background-image: url(https://img.freepik.com/premium-psd/adha-shopping-basket-mockup_187299-38940.jpg?w=900);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 133vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.UX {
+    background-color: rgba(245, 245, 245, 0.252);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.UX p {
+    color: red;
+}
+#pagination {
+    display: flex;
+    justify-content: center;
+}
+#pagination a {
+    text-decoration: none;
+    background-color: royalblue;
+    color: whitesmoke;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+#pagination a i {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 1200px) {
+    #landing {
+        height: 150vh;
+        padding: 0 40px;
+    }
+    #landing h1 {
+        font-size: 40px;
+    }
+    #landing h2 {
+        font-size: 36px;
+    }
+    #landing h4 {
+        font-size: 18px;
+    }
+    .btn1 {
+        padding: 12px 60px;
+        font-size: 14px;
+    }
+    #product1 .pro {
+        width: 48%;
+    }
+    #banner, #sm-banner, #banner3, #newsletter {
+        padding: 0 40px;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 50vh;
+    }
+    #banner3 .banner-box {
+        min-width: 48%;
+    }
+}
+
+@media (max-width: 800px) {
+    #landing {
+        height: 120vh;
+        padding: 0 20px;
+    }
+    #landing h1 {
+        font-size: 30px;
+    }
+    #landing h2 {
+        font-size: 26px;
+    }
+    #landing h4 {
+        font-size: 14px;
+    }
+    .btn1 {
+        padding: 10px 50px;
+        font-size: 12px;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 50vh;
+    }
+    #banner3 .banner-box {
+        min-width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    #landing {
+        height: 100vh;
+        padding: 0 10px;
+    }
+    #landing h1 {
+        font-size: 24px;
+    }
+    #landing h2 {
+        font-size: 20px;
+    }
+    #landing h4 {
+        font-size: 12px;
+    }
+    .btn1 {
+        padding: 8px 40px;
+        font-size: 10px;
+    }
+    #feature div {
+        width: 100%;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    #banner3 .banner-box {
+        min-width: 100%;
+        height: 20vh;
+    }
+    #newsletter {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 300px) {
+    #landing {
+        height: 80vh;
+        padding: 0 5px;
+    }
+    #landing h1 {
+        font-size: 18px;
+    }
+    #landing h2 {
+        font-size: 16px;
+    }
+    #landing h4 {
+        font-size: 10px;
+    }
+    .btn1 {
+        padding: 6px 30px;
+        font-size: 8px;
+    }
+    #feature div {
+        width: 100%;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 20vh;
+    }
+    #banner3 .banner-box {
+        min-width: 100%;
+        height: 15vh;
+    }
+    #newsletter {
+        flex-direction: column;
+        text-align: center;
+    }
+    #newsletter h4, #newsletter p {
+        font-size: 12px;
+    }
+    .section-p1, .section-m1 {
+        padding: 20px 10px;
+    }
+    button.normal {
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+    button.white {
+        font-size: 9px;
+        padding: 8px 15px;
+    }
+    #banner {
+        height: 30vh;
+    }
+    #banner h2 {
+        font-size: 20px;
+    }
+    #banner h4 {
+        font-size: 14px;
+    }
+    #product1 .pro .des h5, #product1 .pro .des h4 {
+        font-size: 12px;
+    }
+    #product1 .pro .des .star i {
+        font-size: 18px;
+    }
+    footer {
+        font-size: 0.01em;
+    }
+}
