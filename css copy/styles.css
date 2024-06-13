@@ -442,6 +442,10 @@ footer {
     background-color: royalblue;
     color: whitesmoke;
     border-radius: 10px;
+    transition: 0.2s;
+}
+.add-to-cart:hover {
+    background-color: black;
 }
 .button1 {
     width: 140px;

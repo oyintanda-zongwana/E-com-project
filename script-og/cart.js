@@ -1,4 +1,3 @@
-//so that i dont have to wait for the css images,etc to finish loading.
 document.addEventListener('DOMContentLoaded', function() {
     let purchasedItems = JSON.parse(localStorage.getItem('purchasedItems')) || [];
     let cartItemsContainer = document.getElementById('cart-items');
@@ -8,13 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         cartTotal = purchasedItems.reduce((total, item) => total + (item.price * item.quantity), 0);
         document.getElementById('cart-total').textContent = cartTotal.toFixed(2);
     }
-
-    function removeItem(index) {
-        purchasedItems.splice(index, 1);
-        localStorage.setItem('purchasedItems', JSON.stringify(purchasedItems));
-        renderCartItems();
-    }
-
     function renderCartItems() {
         cartItemsContainer.innerHTML = '';
         purchasedItems.forEach((item, index) => {
@@ -35,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     renderCartItems();
 });
-
 function removeItem(index) {
     let purchasedItems = JSON.parse(localStorage.getItem('purchasedItems')) || [];
     purchasedItems.splice(index, 1);
