@@ -64,11 +64,44 @@
         </div>
     </section>
 
+
+    <form class="d-flex" role="search">
+        <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="button">Search</button>
+    </form>
+    
+
+    <div class="d-flex justify-content-end">
+        <button id="sort-button" class="btn btn-primary">Sort Alphabetically</button>
+    </div>
+
+
     <!-- class="section-p1" -->
     <section id="product1">
         <div class="pro-container">
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modal-image" src="" alt="" class="img-fluid">
+                    <p id="modal-description"></p>
+                    <h4 id="modal-price"></h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="add-to-cart btn btn-primary" id="modal-add-to-cart" data-id=""><i class="las la-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <section id="pagination" class="section-p1">
         <!-- <a href="#">go to top: <br> press me</a> -->
@@ -119,7 +152,8 @@
             </form>
     </section>
 
-    <footer>
+    
+    <footer >
         <p>Copy Right 2024 &#169 By Oyintanda Zongwana All Rights Reserved</p>
     </footer>
 
