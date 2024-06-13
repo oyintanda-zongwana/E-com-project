@@ -66,6 +66,19 @@ button.white {
 body {
     width: 100%;
 }
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #444;
+    color: #fff;
+    margin-top: 40px;
+    border-top: 4px solid #e0a800;
+}
+footer p {
+    margin: 0;
+    font-size: 1em;
+    color: whitesmoke;
+}
 
 /* HOME PAGE */
 .logo {
@@ -602,22 +615,71 @@ footer {
   }
 
 
-/* Responsive Styles */
-@media (max-width: 800px) {
-    .about-section {
-        padding: 40px 20px;
-    }
-    .about-section .container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .about-section .about-text {
-        padding-right: 0;
-    }
-    .about-section .about-image {
-        margin-top: 20px;
-    }
+/* Contact page */
+.container1 {
+    width: 70%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #e0a800;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: rgb(5, 0, 149);
+}
+header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+.slogan {
+    color: royalblue;
+}
+.contact-form {
+    margin-top: 30px;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-form button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0a800;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #cc9400;
+}
+
+
+
+
+/* Responsive Styles */
 @media (max-width: 1200px) {
     #landing {
         height: 150vh;
@@ -678,6 +740,31 @@ footer {
     #banner3 .banner-box {
         min-width: 100%;
     }
+    .about-section {
+        padding: 40px 20px;
+    }
+    .about-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-section .about-text {
+        padding-right: 0;
+    }
+    .about-section .about-image {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    header p {
+        font-size: 1em;
+    }
 }
 @media (max-width: 500px) {
     #landing {
@@ -711,6 +798,51 @@ footer {
     #newsletter {
         flex-direction: column;
         text-align: center;
+    }
+    .about-section {
+        padding: 30px 10px;
+    }
+    .about-section h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .about-section .about-text h2 {
+        font-size: 24px;
+    }
+    .about-section .about-text p {
+        font-size: 14px;
+    }
+    .about-section .about-image {
+        margin-top: 15px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    thead {
+        display: none;
+    }
+    tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
     }
 }
 @media (max-width: 300px) {
@@ -781,26 +913,6 @@ footer {
     footer {
         font-size: 0.01em;
     }
-}
-@media (max-width: 500px) {
-    .about-section {
-        padding: 30px 10px;
-    }
-    .about-section h1 {
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-    .about-section .about-text h2 {
-        font-size: 24px;
-    }
-    .about-section .about-text p {
-        font-size: 14px;
-    }
-    .about-section .about-image {
-        margin-top: 15px;
-    }
-}
-@media (max-width: 300px) {
     .about-section {
         padding: 20px 5px;
     }
@@ -817,39 +929,6 @@ footer {
     .about-section .about-image {
         margin-top: 10px;
     }
-}
-@media (max-width: 500px) {
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-    thead {
-        display: none;
-    }
-    tbody, tr, td {
-        display: block;
-        width: 100%;
-    }
-    tr {
-        margin-bottom: 15px;
-    }
-    td {
-        text-align: right;
-        padding-left: 50%;
-        position: relative;
-    }
-    td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 0;
-        width: 50%;
-        padding-left: 15px;
-        font-weight: bold;
-        text-align: left;
-    }
-}
-@media (max-width: 300px) {
     table {
         display: block;
         overflow-x: auto;
