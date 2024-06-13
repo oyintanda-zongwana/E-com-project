@@ -77,6 +77,9 @@ body {
     top: 0;
     z-index: 1;
 }
+#navbarSupportedContent li a i {
+    font-size: 40px;
+}
 #navbarSupportedContent li a:hover {
     color: #29829b;
 }
@@ -373,6 +376,7 @@ body {
 footer {
     background-color: black;
     color: cornsilk;
+    text-align: center;
 }
 
 
@@ -517,7 +521,103 @@ footer {
   }
   
 
-/* MEDIA QUERY */
+/* ABOUT PAGE */
+#landing-about {
+    background-image: url(https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg?w=740);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 133vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#landing-about .Ux {
+    background-color: rgba(255, 0, 0, 0.667);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+#landing-about .Ux h2 {
+    color: aqua;
+}
+#landing-about .Ux h1 {
+    color: rgb(17, 255, 0);
+}
+.about-section {
+    padding: 60px 80px;
+    background-color: #f4f4f4;
+}
+.about-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-section h1 {
+    width: 100%;
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #282525;
+}
+.about-section .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-section .about-text {
+    flex: 1;
+    padding-right: 40px;
+}
+.about-section .about-text h2 {
+    font-size: 28px;
+    color: #282525;
+    margin-bottom: 20px;
+}
+.about-section .about-text p {
+    font-size: 16px;
+    color: #385a4b;
+    margin-bottom: 20px;
+}
+.about-section .about-image {
+    flex: 1;
+    max-width: 500px;
+}
+.about-section .about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CART PAGE */
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+  }
+
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+    .about-section {
+        padding: 40px 20px;
+    }
+    .about-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-section .about-text {
+        padding-right: 0;
+    }
+    .about-section .about-image {
+        margin-top: 20px;
+    }
+}
 @media (max-width: 1200px) {
     #landing {
         height: 150vh;
@@ -550,7 +650,6 @@ footer {
         min-width: 48%;
     }
 }
-
 @media (max-width: 800px) {
     #landing {
         height: 120vh;
@@ -681,5 +780,108 @@ footer {
     }
     footer {
         font-size: 0.01em;
+    }
+}
+@media (max-width: 500px) {
+    .about-section {
+        padding: 30px 10px;
+    }
+    .about-section h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .about-section .about-text h2 {
+        font-size: 24px;
+    }
+    .about-section .about-text p {
+        font-size: 14px;
+    }
+    .about-section .about-image {
+        margin-top: 15px;
+    }
+}
+@media (max-width: 300px) {
+    .about-section {
+        padding: 20px 5px;
+    }
+    .about-section h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .about-section .about-text h2 {
+        font-size: 18px;
+    }
+    .about-section .about-text p {
+        font-size: 12px;
+    }
+    .about-section .about-image {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 500px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    thead {
+        display: none;
+    }
+    tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+@media (max-width: 300px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    thead {
+        display: none;
+    }
+    tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+    tr {
+        margin-bottom: 10px;
+    }
+    td {
+        text-align: right;
+        padding-left: 40%;
+        position: relative;
+        font-size: 12px;
+    }
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 40%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+        font-size: 12px;
+    }
+    img {
+        width: 40px;
     }
 }
