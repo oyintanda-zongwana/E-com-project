@@ -66,6 +66,19 @@ button.white {
 body {
     width: 100%;
 }
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #444;
+    color: #fff;
+    margin-top: 40px;
+    border-top: 4px solid #e0a800;
+}
+footer p {
+    margin: 0;
+    font-size: 1em;
+    color: whitesmoke;
+}
 
 /* HOME PAGE */
 .logo {
@@ -77,11 +90,12 @@ body {
     top: 0;
     z-index: 1;
 }
+#navbarSupportedContent li a i {
+    font-size: 40px;
+}
 #navbarSupportedContent li a:hover {
     color: #29829b;
 }
-
-/* Home Page */
 #landing {
     background-image: url('https://images.pexels.com/photos/20536749/pexels-photo-20536749/free-photo-of-blonde-women-posing-in-a-narrow-alley.jpeg?auto=compress&cs=tinysrgb&w=600');
     background-size: cover;
@@ -375,10 +389,13 @@ body {
 footer {
     background-color: black;
     color: cornsilk;
+    text-align: center;
 }
 
 
+
 /* SHOPING PAGE */
+
 #landing-header {
     background-image: url(https://img.freepik.com/premium-psd/adha-shopping-basket-mockup_187299-38940.jpg?w=900);
     background-size: cover;
@@ -401,8 +418,268 @@ footer {
 .UX p {
     color: red;
 }
+#pagination {
+    display: flex;
+    justify-content: center;
+}
+#pagination a {
+    text-decoration: none;
+    background-color: royalblue;
+    color: whitesmoke;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+#pagination a i {
+    font-size: 17px;
+    font-weight: 600;
+}
+#button1 {
+    display: flex;
+    justify-content: center;
+}
+.add-to-cart {
+    background-color: royalblue;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+.button1 {
+    width: 140px;
+    height: 56px;
+    overflow: hidden;
+    border: none;
+    color: #000000;
+    background: none;
+    position: relative;
+    padding-bottom: 2em;
+    cursor: pointer;
+  }
+  
+.button1 > div,
+  button > svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+.button1:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background: currentColor;
+    transition: transform 0.25s ease-out;
+  }
+  
+.button1:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+.button1 .clone > *,
+.button1 .text > * {
+    opacity: 1;
+    font-size: 1.3rem;
+    transition: 0.2s;
+    margin-left: 4px;
+  }
+  
+.button1 .clone > * {
+    transform: translateY(60px);
+  }
+  
+.button1:hover .clone > * {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  
+.button1:hover .text > * {
+    opacity: 1;
+    transform: translateY(-60px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  
+.button1:hover .clone > :nth-child(1) {
+    transition-delay: 0.15s;
+  }
+  
+.button1:hover .clone > :nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  
+.button1:hover .clone > :nth-child(3) {
+    transition-delay: 0.25s;
+  }
+  
+.button1:hover .clone > :nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  /* icon style and hover */
+.button1 svg {
+    width: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-50deg);
+    transition: 0.2s ease-out;
+  }
+  
+.button1:hover svg {
+    transform: translateY(-50%) rotate(-90deg);
+  }
+  
 
-/* MEDIA QUERY */
+/* ABOUT PAGE */
+#landing-about {
+    background-image: url(https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg?w=740);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 133vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#landing-about .Ux {
+    background-color: rgba(255, 0, 0, 0.667);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+#landing-about .Ux h2 {
+    color: aqua;
+}
+#landing-about .Ux h1 {
+    color: rgb(17, 255, 0);
+}
+.about-section {
+    padding: 60px 80px;
+    background-color: #f4f4f4;
+}
+.about-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-section h1 {
+    width: 100%;
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #282525;
+}
+.about-section .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-section .about-text {
+    flex: 1;
+    padding-right: 40px;
+}
+.about-section .about-text h2 {
+    font-size: 28px;
+    color: #282525;
+    margin-bottom: 20px;
+}
+.about-section .about-text p {
+    font-size: 16px;
+    color: #385a4b;
+    margin-bottom: 20px;
+}
+.about-section .about-image {
+    flex: 1;
+    max-width: 500px;
+}
+.about-section .about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CART PAGE */
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+  }
+
+
+/* Contact page */
+.container1 {
+    width: 70%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #e0a800;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: rgb(5, 0, 149);
+}
+header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+.slogan {
+    color: royalblue;
+}
+.contact-form {
+    margin-top: 30px;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-form button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0a800;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #cc9400;
+}
+
+
+
+
+/* Responsive Styles */
 @media (max-width: 1200px) {
     #landing {
         height: 150vh;
@@ -435,7 +712,6 @@ footer {
         min-width: 48%;
     }
 }
-
 @media (max-width: 800px) {
     #landing {
         height: 120vh;
@@ -463,6 +739,31 @@ footer {
     }
     #banner3 .banner-box {
         min-width: 100%;
+    }
+    .about-section {
+        padding: 40px 20px;
+    }
+    .about-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-section .about-text {
+        padding-right: 0;
+    }
+    .about-section .about-image {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    header p {
+        font-size: 1em;
     }
 }
 @media (max-width: 500px) {
@@ -497,6 +798,51 @@ footer {
     #newsletter {
         flex-direction: column;
         text-align: center;
+    }
+    .about-section {
+        padding: 30px 10px;
+    }
+    .about-section h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .about-section .about-text h2 {
+        font-size: 24px;
+    }
+    .about-section .about-text p {
+        font-size: 14px;
+    }
+    .about-section .about-image {
+        margin-top: 15px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    thead {
+        display: none;
+    }
+    tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
     }
 }
 @media (max-width: 300px) {
@@ -563,5 +909,58 @@ footer {
     }
     #product1 .pro .des .star i {
         font-size: 18px;
+    }
+    footer {
+        font-size: 0.01em;
+    }
+    .about-section {
+        padding: 20px 5px;
+    }
+    .about-section h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .about-section .about-text h2 {
+        font-size: 18px;
+    }
+    .about-section .about-text p {
+        font-size: 12px;
+    }
+    .about-section .about-image {
+        margin-top: 10px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    thead {
+        display: none;
+    }
+    tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+    tr {
+        margin-bottom: 10px;
+    }
+    td {
+        text-align: right;
+        padding-left: 40%;
+        position: relative;
+        font-size: 12px;
+    }
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 40%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+        font-size: 12px;
+    }
+    img {
+        width: 40px;
     }
 }
