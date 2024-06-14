@@ -101,8 +101,15 @@ document.querySelectorAll('.view-item').forEach(button => {
 
 function addToCart(id) {
     let item = items.find(item => item.id === id);
-    purchasedItems.push(item);
-    localStorage.setItem('purchasedItems', JSON.stringify(purchasedItems));
+    if (item) {
+        let purchasedItem = purchasedItems.find(pItem => pItem.id === id);
+        if (purchasedItem) {
+            purchasedItem.quantity++;
+        } else {
+            purchasedItems.push({ ...item, quantity: 1 });
+        }
+        localStorage.setItem('purchasedItems', JSON.stringify(purchasedItems));
+    }
 }
 
 let cartButtons = document.querySelectorAll('.add-to-cart');
@@ -112,6 +119,7 @@ cartButtons.forEach(button => {
         addToCart(id);
     });
 });
+
 
 // Initial render
 renderItems(items);
