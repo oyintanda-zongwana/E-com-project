@@ -266,11 +266,11 @@ footer p {
     background-color: black;
     color: white;
 }
-#sm-banner {
+#sm-banner { 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-}
+ }
 #sm-banner .banner-box {
     margin: 20px;
     display: flex;
