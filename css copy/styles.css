@@ -555,16 +555,17 @@ footer {
     flex-wrap: wrap;
 }
 #landing-about .Ux {
-    background-color: rgba(255, 0, 0, 0.667);
+    background-color: rgba(230, 230, 230, 0.511);
     border-radius: 10px;
     text-align: center;
     
 }
 #landing-about .Ux h2 {
-    color: aqua;
+    color: rgb(0, 0, 0);
 }
 #landing-about .Ux h1 {
-    color: rgb(17, 255, 0);
+    color: rgb(255, 106, 0);
+    font-weight: 900;
 }
 .about-section {
     padding: 60px 80px;
