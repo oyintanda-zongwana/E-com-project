@@ -856,13 +856,13 @@ header p {
         padding: 0 5px;
     }
     #landing h1 {
-        font-size: 18px;
+        font-size: 4.5vh;
     }
     #landing h2 {
-        font-size: 16px;
+        font-size: 4vh;
     }
     #landing h4 {
-        font-size: 10px;
+        font-size: 4vh;
     }
     .btn1 {
         padding: 6px 30px;
@@ -901,13 +901,13 @@ header p {
         padding: 8px 15px;
     }
     #banner {
-        height: 30vh;
+        font-size: 4vh;
     }
     #banner h2 {
-        font-size: 20px;
+        font-size: 4vh;
     }
     #banner h4 {
-        font-size: 14px;
+        ont-size: 4vh;
     }
     #product1 .pro .des h5, #product1 .pro .des h4 {
         font-size: 12px;
@@ -919,6 +919,9 @@ header p {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
+    }
+    .UX p{
+        font-size: 2.3vh;
     }
     #landing-about {
         display: flex;
