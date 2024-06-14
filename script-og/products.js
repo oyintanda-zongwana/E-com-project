@@ -32,34 +32,40 @@ localStorage.setItem('items', JSON.stringify(items));
 
 let purchasedItems = JSON.parse(localStorage.getItem('purchasedItems')) || [];
 
-items.forEach(item => {
-    main.innerHTML += `
-        <div class="pro">
-            <img src="${item.image}" alt="">
-            <div class="des">
-                <span>${item.name}</span>
-                <h5>${item.catergory}</h5>
-                <div class="star">
-                    <i class="las la-star"></i>
-                    <i class="las la-star"></i>
-                    <i class="las la-star"></i>
-                    <i class="las la-star"></i>
-                    <i class="las la-star"></i>
-                </div>
-                <h4>$${item.price}</h4>
-                <div class="cart">
-                    <button class="add-to-cart" data-id="${item.id}"><i class="las la-shopping-cart"></i></button>
-                </div>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary view-item" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="${item.id}">
-                View
-                </button>
-            </div>
-        </div>
-    `;
-});
+// Existing code for creating items and rendering them
 
-// Function to update the modal content
+function renderItems(items) {
+    const main = document.querySelector('.pro-container');
+    main.innerHTML = ''; // Clear existing items
+
+    items.forEach(item => {
+        main.innerHTML += `
+            <div class="pro">
+                <img src="${item.image}" alt="">
+                <div class="des">
+                    <span>${item.name}</span>
+                    <h5>${item.category}</h5>
+                    <div class="star">
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                        <i class="las la-star"></i>
+                    </div>
+                    <h4>$${item.price}</h4>
+                    <div class="cart">
+                        <button class="add-to-cart" data-id="${item.id}"><i class="las la-shopping-cart"></i></button>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary view-item" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="${item.id}">
+                    View
+                    </button>
+                </div>
+            </div>
+        `;
+    });
+
+    // Function to update the modal content
 function updateModalContent(item) {
     document.getElementById('exampleModalLabel').textContent = item.name;
     document.getElementById('modal-image').src = item.image;
@@ -76,30 +82,33 @@ document.querySelectorAll('.view-item').forEach(button => {
         updateModalContent(item);
     });
 });
+    // Re-add event listeners for add-to-cart and view-item buttons
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', event => {
+            let id = parseInt(event.currentTarget.dataset.id);
+            addToCart(id);
+        });
+    });
 
-
-function addToCart(id) {
-    let item = items.find(item => item.id === id);
-    purchasedItems.push(item);
-    localStorage.setItem('purchasedItems', JSON.stringify(purchasedItems));
+    document.querySelectorAll('.view-item').forEach(button => {
+        button.addEventListener('click', event => {
+            const id = parseInt(event.currentTarget.getAttribute('data-id'));
+            const item = items.find(item => item.id === id);
+            updateModalContent(item);
+        });
+    });
 }
 
-let cartButtons = document.querySelectorAll('.add-to-cart');
-cartButtons.forEach(button => {
-    button.addEventListener('click', event => {
-        let id = parseInt(event.currentTarget.dataset.id);
-        addToCart(id);
-    });
-});
+// Initial render
+renderItems(items);
 
 document.getElementById('sort-button').addEventListener('click', () => {
     items.sort((a, b) => a.name.localeCompare(b.name));
     renderItems(items);
 });
-document.getElementById('search-input').addEventListener('input', event => {
-    const query = event.target.value.toLowerCase();
+
+document.getElementById('search-button').addEventListener('click', () => {
+    const query = document.getElementById('search-input').value.toLowerCase();
     const filteredItems = items.filter(item => item.name.toLowerCase().includes(query) || item.category.toLowerCase().includes(query));
     renderItems(filteredItems);
 });
-
-renderItems(items);
