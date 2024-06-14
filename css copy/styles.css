@@ -915,6 +915,27 @@ header p {
     #product1 .pro .des .star i {
         font-size: 18px;
     }
+    #landing-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    #landing-about {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 10%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 60vh;
+        width: 100%;
+    }
+    #landing-about h2, h1 {
+        font-size: 4vh;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: start;
+    }
     footer {
         font-size: 0.01em;
     }
