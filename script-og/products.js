@@ -99,6 +99,20 @@ document.querySelectorAll('.view-item').forEach(button => {
     });
 }
 
+function addToCart(id) {
+    let item = items.find(item => item.id === id);
+    purchasedItems.push(item);
+    localStorage.setItem('purchasedItems', JSON.stringify(purchasedItems));
+}
+
+let cartButtons = document.querySelectorAll('.add-to-cart');
+cartButtons.forEach(button => {
+    button.addEventListener('click', event => {
+        let id = parseInt(event.currentTarget.dataset.id);
+        addToCart(id);
+    });
+});
+
 // Initial render
 renderItems(items);
 
