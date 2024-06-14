@@ -850,7 +850,7 @@ header p {
         text-align: left;
     }
 }
-@media (max-width: 300px) {
+@media (min-width: 300px) {
     #landing {
         height: 80vh;
         padding: 0 5px;
